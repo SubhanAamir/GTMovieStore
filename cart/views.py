@@ -3,7 +3,9 @@ from django.shortcuts import get_object_or_404, redirect
 from movies.models import Movie
 from .utils import calculate_cart_total
 from .models import Order, Item
+from movies.models import Movie
 from django.contrib.auth.decorators import login_required
+
 
 @login_required
 def purchase(request):
